@@ -1,127 +1,215 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atividade 10 – Seção de Eventos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>João Henrique - Portfólio</title>
+
+    <!-- DaisyUI + Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@latest/src/css/phosphor.css" />
 </head>
 
 <body>
 
-    <!-- ===========  Eventos  ================= -->
-    <section>
-        <div>
-            <!-- Cabeçalho da seção -->
-            <div>
-                <h2>Eventos</h2>
-                <a href="/eventos/">
-                    Todos os eventos
-                    <span aria-hidden="true"></span>
-                </a>
-                <div>
-                    <p>Conheça todos os eventos - atividades, festivais, congressos, palestras e outros - que englobam
-                        os <i>campi</i> do IFRN em diferentes escalas de alcance social.</p>
+    <!-- NAVBAR -->
+    <div class="navbar bg-base-200 shadow-md px-6">
+        <div class="flex-1">
+            <p class="text-xl font-bold">João Henrique</p>
+        </div>
+
+        <div class="flex-none">
+            <a href="#contato" class="btn btn-primary">
+                Contato
+            </a>
+        </div>
+    </div>
+
+
+    <!-- APRESENTAÇÃO -->
+    <section class="hero min-h-[400px] bg-base-100">
+        <div class="hero-content text-center">
+            <div class="max-w-2xl">
+
+                <h1 class="text-4xl md:text-5xl font-bold">
+                    Olá, eu sou João Henrique!
+                </h1>
+
+                <p class="py-6 text-lg">
+                    Sou estudante de programação e estou aprendendo
+                    desenvolvimento web, criando projetos com HTML,
+                    CSS, JavaScript e Tailwind CSS.
+                </p>
+
+                <!-- BADGES -->
+                <div class="flex justify-center gap-2 flex-wrap">
+                    <span class="badge badge-primary">
+                        HTML
+                    </span>
+
+                    <span class="badge badge-outline">
+                        Tailwind CSS
+                    </span>
+
+                    <span class="badge badge-secondary">
+                        JavaScript
+                    </span>
                 </div>
-            </div>
 
-            <!-- Grade de cards de eventos -->
-            <div>
+                <div class="mt-6">
+                    <a href="#projetos" class="btn btn-primary">
+                        Ver projetos
+                    </a>
 
-                <a href="/eventos/9486/">
-                    <span>Em breve</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Pau dos Ferros</span>
-                    <h3>Vivências em Arte</h3>
-                    <div>
-                        <span>07</span>
-                        <span>dez</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9595/">
-                    <span>Em breve</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Caicó</span>
-                    <h3>III Feira Seridó Ciência</h3>
-                    <div>
-                        <span>25</span>
-                        <span>nov</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9783/">
-                    <span>Em breve</span>
-                    <span title="Campus"><span aria-hidden="true"></span> João Câmara</span>
-                    <h3>CPOP 2026 - Competição de Pontes de Palito de Picolé do IFRN João Câmara</h3>
-                    <div>
-                        <span>04</span>
-                        <span>nov</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9333/">
-                    <span>Em breve</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Reitoria</span>
-                    <h3>III Encontro Anual da Comissão Própria de Avaliação</h3>
-                    <div>
-                        <span>04</span>
-                        <span>nov</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9739/">
-                    <span>Em andamento</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Pau dos Ferros</span>
-                    <h3>Oficina "Dando cores ao sol"</h3>
-                    <div>
-                        <span>14</span>
-                        <span>set</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9764/">
-                    <span>Em andamento</span>
-                    <span title="Campus"><span aria-hidden="true"></span> São Gonçalo do Amarante</span>
-                    <h3>IFJURIS: Introdução ao Direito Constitucional</h3>
-                    <div>
-                        <span>14</span>
-                        <span>set</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9714/">
-                    <span>Em andamento</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Reitoria</span>
-                    <h3>ASTEEAD Conecta: gestão, monitoramento e apoio à EaD no IFRN</h3>
-                    <div>
-                        <span>14</span>
-                        <span>set</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9711/">
-                    <span>Em andamento</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Currais Novos</span>
-                    <h3>Produção e exposição de Sala Temática: Abelha e Mel.</h3>
-                    <div>
-                        <span>14</span>
-                        <span>set</span>
-                        <span>2026</span>
-                    </div>
-                </a>
+                    <a href="#contato" class="btn btn-outline ml-2">
+                        Entrar em contato
+                    </a>
+                </div>
 
             </div>
         </div>
     </section>
 
-</body>
 
+    <!-- PROJETOS -->
+    <section id="projetos" class="bg-base-200 py-16 px-6">
+
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-3xl font-bold text-center mb-10">
+                Meus projetos
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- CARD 1 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <div class="card-body">
+
+                        <h3 class="card-title">
+                            CopaRacing
+                        </h3>
+
+                        <p>
+                            Projeto de um site para um campeonato automonilístico,
+                            desenvolvido utilizando HTML e CSS.
+                        </p>
+
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">
+                                Ver projeto
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- CARD 2 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <div class="card-body">
+
+                        <h3 class="card-title">
+                            Site IFRN
+                        </h3>
+
+                        <p>
+                            Projeto desenvolvido durante as atividades
+                            de desenvolvimento web das aulas de design-web utilizando Tailwind CSS.
+                        </p>
+
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-secondary">
+                                Ver projeto
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- CARD 3 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <div class="card-body">
+
+                        <h3 class="card-title">
+                            Projetos JavaScript
+                        </h3>
+
+                        <p>
+                            Ainda não tem, mas espero poder fazer mais para frente.
+                        </p>
+
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-outline">
+                                Acompanhar progresso
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTATO -->
+    <section id="contato" class="py-16 px-6 bg-base-100">
+
+        <div class="max-w-xl mx-auto">
+
+            <h2 class="text-3xl font-bold text-center mb-8">
+                Entre em contato
+            </h2>
+
+            <form class="space-y-4">
+
+                <div>
+                    <label class="label">
+                        <span class="label-text">Nome</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Digite seu nome"
+                        class="input input-bordered w-full"
+                    >
+                </div>
+
+
+                <div>
+                    <label class="label">
+                        <span class="label-text">E-mail</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        placeholder="Digite seu e-mail"
+                        class="input input-bordered w-full"
+                    >
+                </div>
+
+
+                <button type="submit" class="btn btn-primary w-full">
+                    Enviar mensagem
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer footer-center bg-base-200 text-base-content p-6">
+        <aside>
+            <p>© 2026 João Henrique - Página pessoal</p>
+        </aside>
+    </footer>
+
+</body>
 </html>
