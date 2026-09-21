@@ -1,3 +1,4 @@
+
 ## Tarefa 10 – Seção de eventos
 
 **Objetivo:** A partir do código HTML limpo (sem classes), você deve adicionar classes Tailwind para estilizar a seção "Eventos" do site do IFRN, reproduzindo o layout da imagem de referência.
